@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kecantol.id — Handmade Keychains Made With Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-sky: #ACC9D9;
+      --bg-sky-light: #C6DCE8;
+      --bg-cream: #F9FBFD;
+      --pink-primary: #FF8ABA;
+      --pink-hover: #F572A8;
+      --pink-soft: #FFCAE6;
+      --navy-deep: #21394A;
+      --slate-blue: #39617D;
+      --steel-muted: #58728D;
+      --white: #FFFFFF;
+      --shadow-card: 0 12px 28px rgba(33, 57, 74, 0.10);
+      --radius-lg: 24px;
+      --radius-md: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: linear-gradient(180deg, var(--bg-sky) 0%, var(--bg-sky-light) 45%, #DCEAF2 100%);
+      color: var(--navy-deep);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, .font-display {
+      font-family: 'Fraunces', serif;
+      letter-spacing: -0.02em;
+    }
+
+    .font-editorial {
+      font-family: 'Lora', serif;
+    }
+
+    /* Navbar */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(172, 201, 217, 0.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1.5px solid rgba(255, 255, 255, 0.45);
+    }
+
+    .nav-container {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--navy-deep);
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--white);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: 2px solid var(--navy-deep);
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    .btn-pink {
+      background: var(--pink-primary);
+      color: var(--navy-deep);
+      box-shadow: 0 4px 0 var(--navy-deep);
+    }
+
+    .btn-pink:hover {
+      background: var(--pink-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 0 var(--navy-deep);
+    }
+
+    .btn-white {
+      background: var(--white);
+      color: var(--navy-deep);
+      box-shadow: 0 4px 0 var(--navy-deep);
+    }
+
+    .btn-white:hover {
+      background: var(--pink-soft);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 0 var(--navy-deep);
+    }
+
+    /* Section Container */
+    .container {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 4.5rem 1.5rem;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-pill {
+      display: inline-block;
+      background: var(--pink-soft);
+      color: var(--navy-deep);
+      border: 1.5px solid var(--navy-deep);
+      padding: 0.3rem 1rem;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 2.85rem);
+      color: var(--white);
+      text-shadow: 2px 3px 0 var(--slate-blue);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-subtitle {
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      color: var(--navy-deep);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 4rem 1.5rem 5rem;
+      max-width: 1160px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+      gap: 3rem;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--white);
+      border: 2px solid var(--navy-deep);
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 4.8vw, 3.6rem);
+      line-height: 1.12;
+      color: var(--white);
+      text-shadow: 3px 4px 0 var(--navy-deep);
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 span {
+      color: var(--pink-primary);
+    }
+
+    .hero-tagline {
+      font-family: 'Lora', serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--navy-deep);
+      margin-bottom: 1rem;
+    }
+
+    .hero-desc {
+      color: var(--slate-blue);
+      font-size: 1.02rem;
+      margin-bottom: 2rem;
+      max-width: 540px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .hero-showcase {
+      background: var(--white);
+      border: 3px solid var(--navy-deep);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: 8px 8px 0 var(--pink-primary);
+      text-align: center;
+      position: relative;
+    }
+
+    .floating-tag {
+      position: absolute;
+      top: -16px;
+      right: 20px;
+      background: var(--pink-primary);
+      color: var(--navy-deep);
+      border: 2px solid var(--navy-deep);
+      padding: 0.35rem 0.95rem;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.82rem;
+      transform: rotate(3deg);
+    }
+
+    .mini-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+      padding-top: 1.25rem;
+      border-top: 2px dashed var(--bg-sky);
+    }
+
+    .mini-stat strong {
+      display: block;
+      font-family: 'Fraunces', serif;
+      font-size: 1.2rem;
+      color: var(--navy-deep);
+    }
+
+    .mini-stat span {
+      font-size: 0.8rem;
+      color: var(--slate-blue);
+      font-weight: 600;
+    }
+
+    /* What We Sell & Why Keychains */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--white);
+      border: 2.5px solid var(--navy-deep);
+      border-radius: var(--radius-lg);
+      padding: 1.85rem;
+      box-shadow: 0 6px 0 var(--navy-deep);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card-pink {
+      background: var(--pink-soft);
+    }
+
+    .card-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      background: var(--pink-primary);
+      border: 2px solid var(--navy-deep);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      font-size: 1.35rem;
+      color: var(--navy-deep);
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: var(--slate-blue);
+      font-size: 0.96rem;
+      margin-bottom: 1rem;
+    }
+
+    .price-tag {
+      display: inline-block;
+      background: var(--bg-sky-light);
+      border: 1.5px solid var(--navy-deep);
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: var(--navy-deep);
+    }
+
+    /* Catalog & Price List */
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .product-card {
+      background: var(--white);
+      border: 2.5px solid var(--navy-deep);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 6px 0 var(--slate-blue);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-banner {
+      padding: 1.5rem;
+      background: linear-gradient(135deg, var(--pink-soft), #E5F1F8);
+      border-bottom: 2px solid var(--navy-deep);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .product-emoji {
+      font-size: 2.4rem;
+    }
+
+    .material-badge {
+      background: var(--white);
+      border: 1.5px solid var(--navy-deep);
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--slate-blue);
+    }
+
+    .product-body {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product-prices {
+      margin-top: 1.25rem;
+      padding-top: 1rem;
+      border-top: 1.5px dashed var(--bg-sky);
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    .price-col span {
+      display: block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--steel-muted);
+      font-weight: 700;
+    }
+
+    .price-col strong {
+      font-size: 1.05rem;
+      color: var(--navy-deep);
+    }
+
+    /* Custom & Bulk Calculator */
+    .calculator-wrapper {
+      background: var(--white);
+      border: 3px solid var(--navy-deep);
+      border-radius: var(--radius-lg);
+      padding: 2.25rem;
+      box-shadow: 10px 10px 0 var(--pink-primary);
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 2.25rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.35rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--navy-deep);
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 2px solid var(--navy-deep);
+      border-radius: 12px;
+      font-family: inherit;
+      font-size: 0.98rem;
+      background: var(--bg-cream);
+      color: var(--navy-deep);
+    }
+
+    .addons-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 0.65rem;
+    }
+
+    .addon-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.65rem 0.85rem;
+      border: 2px solid var(--bg-sky);
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+
+    .addon-item:hover {
+      border-color: var(--pink-primary);
+      background: #FFF5FA;
+    }
+
+    .addon-item input {
+      accent-color: var(--pink-primary);
+      width: 17px;
+      height: 17px;
+    }
+
+    .summary-box {
+      background: var(--bg-sky-light);
+      border: 2.5px solid var(--navy-deep);
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.65rem;
+      font-size: 0.95rem;
+    }
+
+    .summary-total {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 2px solid var(--navy-deep);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .summary-total strong {
+      font-family: 'Fraunces', serif;
+      font-size: 1.85rem;
+      color: var(--navy-deep);
+    }
+
+    .discount-badge {
+      display: inline-block;
+      background: var(--pink-primary);
+      border: 1.5px solid var(--navy-deep);
+      padding: 0.2rem 0.65rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    /* Bulk Tiers */
+    .bulk-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2.5rem;
+    }
+
+    .bulk-card {
+      background: var(--white);
+      border: 2px solid var(--navy-deep);
+      border-radius: var(--radius-md);
+      padding: 1.4rem;
+      text-align: center;
+    }
+
+    .bulk-card .pct {
+      font-family: 'Fraunces', serif;
+      font-size: 2.2rem;
+      color: var(--pink-primary);
+      text-shadow: 1.5px 2px 0 var(--navy-deep);
+    }
+
+    /* 5 Easy Steps */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .step-card {
+      background: var(--white);
+      border: 2px solid var(--navy-deep);
+      border-radius: var(--radius-md);
+      padding: 1.5rem 1.25rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .step-num {
+      width: 38px;
+      height: 38px;
+      background: var(--pink-primary);
+      border: 2px solid var(--navy-deep);
+      border-radius: 50%;
+      font-family: 'Fraunces', serif;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 0.85rem;
+    }
+
+    .timeline-banner {
+      margin-top: 2rem;
+      background: var(--pink-soft);
+      border: 2px solid var(--navy-deep);
+      border-radius: 999px;
+      padding: 0.85rem 1.5rem;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--navy-deep);
+      color: var(--white);
+      padding: 3.5rem 1.5rem 2rem;
+      margin-top: 3rem;
+    }
+
+    .footer-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .footer-inner a {
+      color: var(--pink-primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .footer-bottom {
+      max-width: 1160px;
+      margin: 1.5rem auto 0;
+      text-align: center;
+      font-size: 0.88rem;
+      color: #B8D4E3;
+    }
+
+    @media (max-width: 860px) {
+      .hero, .calculator-wrapper {
+        grid-template-columns: 1fr;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="nav-container">
+      <!-- SVG Logo Kecantol (Sesuai Desain File Presentasi) -->
+      <a href="#" aria-label="Kecantol Home" style="text-decoration:none; display:inline-flex; align-items:center;">
+        <svg width="185" height="58" viewBox="0 0 320 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Keychain Ring & Clasp Hook di huruf k -->
+          <circle cx="24" cy="24" r="11" stroke="#21394A" stroke-width="4.5" fill="#FFCAE6"/>
+          <path d="M31 32 L38 42" stroke="#21394A" stroke-width="4.5" stroke-linecap="round"/>
+          <!-- Shadow Wordmark -->
+          <text x="41" y="65" font-family="'Fraunces', Georgia, serif" font-weight="800" font-size="52" fill="#21394A" letter-spacing="-1">kecantol</text>
+          <!-- Main Pink Wordmark -->
+          <text x="38" y="62" font-family="'Fraunces', Georgia, serif" font-weight="800" font-size="52" fill="#FF8ABA" stroke="#21394A" stroke-width="2" letter-spacing="-1">kecantol</text>
+          <!-- Sub-tagline -->
+          <text x="44" y="84" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="11.5" fill="#21394A" letter-spacing="3.2">HANDMADE KEYCHAINS</text>
+        </svg>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#katalog">Jenis Bahan</a></li>
+        <li><a href="#kalkulator">Hitung Custom</a></li>
+        <li><a href="#cara-pesan">Cara Pesan</a></li>
+      </ul>
+
+      <a href="https://wa.me/6285886821222?text=Halo%20Kecantol.id!%20Saya%20tertarik%20pesan%20keychain." target="_blank" class="btn btn-pink">
+        Order WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div>
+      <div class="hero-badge">✨ Handmade With Love • Ready & Custom</div>
+      <h1>If you can imagine it, <span>we can make it.</span></h1>
+      <p class="hero-tagline">Any shape. Any color. Any design. Any size.</p>
+      <p class="hero-desc">
+        <strong>Kecantol.id</strong> menghadirkan gantungan kunci <em>handmade</em> yang unik, awet, dan terjangkau untuk kunci, tas, hadiah spesial, maupun <em>souvenir</em> acara Anda.
+      </p>
+      <div class="hero-actions">
+        <a href="#kalkulator" class="btn btn-pink">Simulasi Harga Custom</a>
+        <a href="#katalog" class="btn btn-white">Lihat 6 Jenis Bahan</a>
+      </div>
+    </div>
+
+    <div class="hero-showcase">
+      <div class="floating-tag">Start from Rp 10.000!</div>
+      <!-- Logo Utama Besar -->
+      <svg width="100%" height="150" viewBox="0 0 360 135" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="42" cy="30" r="14" stroke="#21394A" stroke-width="5" fill="#FFCAE6"/>
+        <path d="M51 40 L60 53" stroke="#21394A" stroke-width="5" stroke-linecap="round"/>
+        <text x="58" y="84" font-family="'Fraunces', Georgia, serif" font-weight="800" font-size="62" fill="#21394A" letter-spacing="-1">kecantol</text>
+        <text x="54" y="80" font-family="'Fraunces', Georgia, serif" font-weight="800" font-size="62" fill="#FF8ABA" stroke="#21394A" stroke-width="2.5" letter-spacing="-1">kecantol</text>
+        <text x="64" y="106" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="13.5" fill="#21394A" letter-spacing="3.5">HANDMADE KEYCHAINS</text>
+        <text x="115" y="124" font-family="'Lora', serif" font-style="italic" font-weight="700" font-size="13" fill="#39617D" letter-spacing="1.5">♥ MADE WITH LOVE ♥</text>
+      </svg>
+
+      <div class="mini-stats">
+        <div class="mini-stat">
+          <strong>6 Bahan</strong>
+          <span>Acrylic s.d. Resin</span>
+        </div>
+        <div class="mini-stat">
+          <strong>1–2 Hari</strong>
+          <span>Kirim Ready Stock</span>
+        </div>
+        <div class="mini-stat">
+          <strong>Disc 20%</strong>
+          <span>Untuk Bulk Order</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE SELL -->
+  <section id="layanan" class="container">
+    <div class="section-header">
+      <span class="section-pill">What We Sell?</span>
+      <h2 class="section-title">Pilihan Pemesanan Fleksibel</h2>
+      <p class="section-subtitle">Mulai dari koleksi siap kirim hingga pesanan satuan atau partai besar dengan desain sesuai keinginan Anda.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-icon">⚡</div>
+        <h3>Ready Stock</h3>
+        <p>Gantungan kunci sudah tersedia dan siap kirim. Anda tinggal pilih desain favorit, bayar, dan pesanan langsung dikirim cepat dalam 1–2 hari.</p>
+        <span class="price-tag">Mulai dari Rp 10.000</span>
+      </div>
+
+      <div class="card card-pink">
+        <div class="card-icon" style="background:#FFF;">🎨</div>
+        <h3>Custom Order</h3>
+        <p>Ceritakan ide, nama, foto, atau logo Anda. Tim kami akan merancang pratinjau desain dan memproduksinya khusus untuk Anda dalam 5–7 hari.</p>
+        <span class="price-tag" style="background:#FFF;">Mulai dari Rp 15.000</span>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📦</div>
+        <h3>Bulk Order</h3>
+        <p>Pesan dalam jumlah banyak (10, 50, hingga 100+ pcs) untuk acara sekolah, komunitas, pernikahan, atau <em>merchandise</em> toko.</p>
+        <span class="price-tag">Diskon hingga 20%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 TYPES OF KEYCHAINS & PRICE LIST -->
+  <section id="katalog" class="container">
+    <div class="section-header">
+      <span class="section-pill">Six Types of Keychains</span>
+      <h2 class="section-title">6 Pilihan Material & Daftar Harga</h2>
+      <p class="section-subtitle">Setiap bahan memiliki karakter tampilan tersendiri. Harga akhir menyesuaikan ukuran dan kerumitan desain.</p>
+    </div>
+
+    <div class="catalog-grid">
+      <div class="product-card">
+        <div class="product-banner">
+          <span class="product-emoji">💎</span>
+          <span class="material-badge">Clear, Shiny Plastic</span>
+        </div>
+        <div class="product-body">
+          <div>
+            <h3>1. Acrylic Keychain</h3>
+            <p style="color:var(--slate-blue); font-size:0.94rem; margin-top:0.35rem;">Bening, mengilap, dan ringan. Sangat cocok untuk mencetak foto, ilustrasi warna penuh, maupun potongan bentuk khusus (<em>cut-out</em>).</p>
+          </div>
+          <div class="product-prices">
+            <div class="price-col"><span>Ready Stock</span><strong>Rp 10.000</strong></div>
+            <div class="price-col"><span>Custom (Mulai)</span><strong>Rp 15.000</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-banner">
+          <span class="product-emoji">🪵</span>
+          <span class="material-badge">Laser-Engraved Wood</span>
+        </div>
+        <div class="product-body">
+          <div>
+            <h3>2. Wooden Keychain</h3>
+            <p style="color:var(--slate-blue); font-size:0.94rem; margin-top:0.35rem;">Tampilan alami dan hangat dengan teknik grafir laser presisi untuk nama, kutipan singkat, maupun logo merek Anda.</p>
+          </div>
+          <div class="product-prices">
+            <div class="price-col"><span>Ready Stock</span><strong>Rp 12.000</strong></div>
+            <div class="price-col"><span>Custom (Mulai)</span><strong>Rp 18.000</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-banner">
+          <span class="product-emoji">🧸</span>
+          <span class="material-badge">Soft 3D Rubber (PVC)</span>
+        </div>
+        <div class="product-body">
+          <div>
+            <h3>3. Soft Rubber Keychain</h3>
+            <p style="color:var(--slate-blue); font-size:0.94rem; margin-top:0.35rem;">Bentuk 3D yang lucu, empuk, lentur, dan tahan banting. Ideal untuk maskot komunitas, karakter, atau logo timbul.</p>
+          </div>
+          <div class="product-prices">
+            <div class="price-col"><span>Ready Stock</span><strong>Rp 20.000</strong></div>
+            <div class="price-col"><span>Custom (Mulai)</span><strong>Rp 30.000</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-banner">
+          <span class="product-emoji">🛡️</span>
+          <span class="material-badge">Engraved Steel</span>
+        </div>
+        <div class="product-body">
+          <div>
+            <h3>4. Metal Keychain</h3>
+            <p style="color:var(--slate-blue); font-size:0.94rem; margin-top:0.35rem;">Kuat, kokoh, dan tahan lama dengan ukiran teks yang rapi dan berkelas untuk hadiah maupun identitas tim.</p>
+          </div>
+          <div class="product-prices">
+            <div class="price-col"><span>Ready Stock</span><strong>Rp 25.000</strong></div>
+            <div class="price-col"><span>Custom (Mulai)</span><strong>Rp 35.000</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-banner">
+          <span class="product-emoji">👜</span>
+          <span class="material-badge">Soft Leather</span>
+        </div>
+        <div class="product-body">
+          <div>
+            <h3>5. Leather Keychain</h3>
+            <p style="color:var(--slate-blue); font-size:0.94rem; margin-top:0.35rem;">Desain klasik dan simpel dari kulit lembut. Pilihan elegan untuk <em>souvenir</em> perusahaan, pernikahan, atau hadiah personal.</p>
+          </div>
+          <div class="product-prices">
+            <div class="price-col"><span>Ready Stock</span><strong>Rp 20.000</strong></div>
+            <div class="price-col"><span>Custom (Mulai)</span><strong>Rp 30.000</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-banner">
+          <span class="product-emoji">🌸</span>
+          <span class="material-badge">Resin, Flowers & Beads</span>
+        </div>
+        <div class="product-body">
+          <div>
+            <h3>6. Resin Craft Keychain</h3>
+            <p style="color:var(--slate-blue); font-size:0.94rem; margin-top:0.35rem;">Dibuat dengan bunga kering, <em>glitter</em>, dan manik-manik estetik. Setiap keping memiliki motif unik satu-satunya.</p>
+          </div>
+          <div class="product-prices">
+            <div class="price-col"><span>Ready Stock</span><strong>Rp 25.000</strong></div>
+            <div class="price-col"><span>Custom (Mulai)</span><strong>Rp 40.000</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE CUSTOM & BULK CALCULATOR -->
+  <section id="kalkulator" class="container">
+    <div class="section-header">
+      <span class="section-pill">Custom Price & Bulk Calculator</span>
+      <h2 class="section-title">Simulasi Harga Custom Order</h2>
+      <p class="section-subtitle">Rancang gantungan kunci impian Anda dan lihat estimasi harga otomatis termasuk diskon pembelian grosir.</p>
+    </div>
+
+    <div class="calculator-wrapper">
+      <div>
+        <div class="form-group">
+          <label for="materialSelect">1. Pilih Bahan Dasar (Custom Base Price)</label>
+          <select id="materialSelect" class="form-control">
+            <option value="15000" data-name="Acrylic">Acrylic — Rp 15.000 / pcs</option>
+            <option value="18000" data-name="Wooden">Wooden (Laser-Engraved) — Rp 18.000 / pcs</option>
+            <option value="30000" data-name="Soft Rubber">Soft Rubber (3D PVC) — Rp 30.000 / pcs</option>
+            <option value="35000" data-name="Metal">Metal (Engraved Steel) — Rp 35.000 / pcs</option>
+            <option value="30000" data-name="Leather">Leather (Soft Leather) — Rp 30.000 / pcs</option>
+            <option value="40000" data-name="Resin Craft">Resin Craft — Rp 40.000 / pcs</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>2. Tambahan Kustomisasi (Add-ons)</label>
+          <div class="addons-grid">
+            <label class="addon-item">
+              <input type="checkbox" class="addon-check" value="5000" data-label="Photo / Full-color Print" checked>
+              Photo / Print (+Rp 5.000)
+            </label>
+            <label class="addon-item">
+              <input type="checkbox" class="addon-check" value="5000" data-label="Your Logo">
+              Your Logo (+Rp 5.000)
+            </label>
+            <label class="addon-item">
+              <input type="checkbox" class="addon-check" value="8000" data-label="Special Cut-out Shape">
+              Special Shape (+Rp 8.000)
+            </label>
+            <label class="addon-item">
+              <input type="checkbox" class="addon-check" value="2000" data-label="Extra Charm / Beads">
+              Charm / Beads (+Rp 2.000)
+            </label>
+            <label class="addon-item">
+              <input type="checkbox" class="addon-check" value="5000" data-label="Luxury Gift Box" checked>
+              Gift Box (+Rp 5.000)
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group" style="display:grid; grid-template-columns: 1fr 1.5fr; gap:1rem;">
+          <div>
+            <label for="qtyInput">3. Jumlah (Pcs)</label>
+            <input type="number" id="qtyInput" class="form-control" value="1" min="1" max="5000">
+          </div>
+          <div>
+            <label for="noteInput">4. Catatan Teks / Warna</label>
+            <input type="text" id="noteInput" class="form-control" placeholder="Contoh: Nama 'Sarah', warna pastel pink">
+          </div>
+        </div>
+      </div>
+
+      <div class="summary-box">
+        <div>
+          <span class="discount-badge" id="discountBadge">Harga Satuan Normal (1–9 pcs)</span>
+          <h3 style="margin-bottom:1rem;">Ringkasan Estimasi</h3>
+
+          <div class="summary-row">
+            <span>Harga Dasar Bahan:</span>
+            <strong id="basePriceDisplay">Rp 15.000</strong>
+          </div>
+          <div class="summary-row">
+            <span>Total Add-ons / pcs:</span>
+            <strong id="addonPriceDisplay">Rp 10.000</strong>
+          </div>
+          <div class="summary-row">
+            <span>Harga per Pcs:</span>
+            <strong id="unitPriceDisplay">Rp 25.000</strong>
+          </div>
+          <div class="summary-row">
+            <span>Jumlah Pesanan:</span>
+            <strong id="qtyDisplay">1 pcs</strong>
+          </div>
+          <div class="summary-row" id="discountRow" style="display:none; color:#C2185B;">
+            <span>Diskon Bulk Order:</span>
+            <strong id="discountAmountDisplay">- Rp 0</strong>
+          </div>
+        </div>
+
+        <div>
+          <div class="summary-total">
+            <span>Total Estimasi</span>
+            <strong id="totalPriceDisplay">Rp 25.000</strong>
+          </div>
+          <button type="button" id="waOrderBtn" class="btn btn-pink" style="width:100%; margin-top:1.25rem;">
+            Pesan Sekarang via WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bulk Order Tiers -->
+    <div class="bulk-grid">
+      <div class="bulk-card">
+        <div class="pct">10%</div>
+        <strong>10 – 49 Pieces</strong>
+        <p style="font-size:0.9rem; color:var(--slate-blue); margin-top:0.25rem;">Diskon khusus untuk <em>small events</em> & hadiah kelas.</p>
+      </div>
+      <div class="bulk-card" style="background:var(--pink-soft);">
+        <div class="pct">15%</div>
+        <strong>50 – 99 Pieces</strong>
+        <p style="font-size:0.9rem; color:var(--navy-deep); margin-top:0.25rem;">Diskon spesial untuk tim, organisasi, dan kelas.</p>
+      </div>
+      <div class="bulk-card">
+        <div class="pct">20%</div>
+        <strong>100+ Pieces</strong>
+        <p style="font-size:0.9rem; color:var(--slate-blue); margin-top:0.25rem;">Diskon maksimal acara besar + <strong>gratis bantuan desain</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO ORDER -->
+  <section id="cara-pesan" class="container">
+    <div class="section-header">
+      <span class="section-pill">Five Easy Steps</span>
+      <h2 class="section-title">Cara Mudah Pemesanan</h2>
+      <p class="section-subtitle">Cocok untuk pelajar, kado ulang tahun, <em>event organizer</em>, UMKM, hingga <em>fanbase</em> komunitas.</p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h4>Choose</h4>
+        <p style="font-size:0.9rem; color:var(--slate-blue);">Pilih katalog <em>ready stock</em> atau tentukan bahan <em>custom</em>.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h4>Share</h4>
+        <p style="font-size:0.9rem; color:var(--slate-blue);">Kirimkan nama, foto, logo, atau ide bentuk lewat chat.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h4>Approve</h4>
+        <p style="font-size:0.9rem; color:var(--slate-blue);">Kami kirimkan pratinjau desain untuk Anda setujui.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <h4>Pay</h4>
+        <p style="font-size:0.9rem; color:var(--slate-blue);">Pembayaran mudah via transfer bank atau <em>e-wallet</em>.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">5</div>
+        <h4>Receive</h4>
+        <p style="font-size:0.9rem; color:var(--slate-blue);">Pesanan diproduksi dengan rapi dan dikirim ke alamat Anda.</p>
+      </div>
+    </div>
+
+    <div class="timeline-banner">
+      ⏱️ Estimasi Pengiriman: <strong>Ready Stock 1–2 Hari</strong> &nbsp;|&nbsp; <strong>Custom Order 5–7 Hari</strong>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h3 style="color:var(--pink-primary); font-size:1.6rem; margin-bottom:0.5rem;">kecantol.id</h3>
+        <p style="color:#DCEAF2; font-size:0.95rem;">
+          Handmade Keychains — Made With Love. Gantungan kunci unik, terjangkau, dan dapat dikustomisasi sesuai ekspresi diri Anda.
+        </p>
+      </div>
+      <div>
+        <h4 style="margin-bottom:0.75rem;">Hubungi Kami</h4>
+        <p style="margin-bottom:0.4rem;">📱 WhatsApp: <a href="https://wa.me/6285886821222" target="_blank">0858-8682-1222</a></p>
+        <p>📸 Instagram: <a href="https://instagram.com/kecantol.id" target="_blank">@kecantol.id</a></p>
+      </div>
+      <div>
+        <h4 style="margin-bottom:0.75rem;">Cocok Untuk</h4>
+        <p style="color:#DCEAF2; font-size:0.92rem;">
+          Students & Schools • Gift Buyers • Event Planners • Small Brands • Fan Groups
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Kecantol.id — Handmade Keychains. Tugas Aplikasi Komputer Bisnis.
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT CALCULATOR & WHATSAPP GENERATOR -->
+  <script>
+    const materialSelect = document.getElementById('materialSelect');
+    const addonChecks = document.querySelectorAll('.addon-check');
+    const qtyInput = document.getElementById('qtyInput');
+    const noteInput = document.getElementById('noteInput');
+
+    const basePriceDisplay = document.getElementById('basePriceDisplay');
+    const addonPriceDisplay = document.getElementById('addonPriceDisplay');
+    const unitPriceDisplay = document.getElementById('unitPriceDisplay');
+    const qtyDisplay = document.getElementById('qtyDisplay');
+    const discountRow = document.getElementById('discountRow');
+    const discountAmountDisplay = document.getElementById('discountAmountDisplay');
+    const totalPriceDisplay = document.getElementById('totalPriceDisplay');
+    const discountBadge = document.getElementById('discountBadge');
+    const waOrderBtn = document.getElementById('waOrderBtn');
+
+    function formatRupiah(angka) {
+      return 'Rp ' + angka.toLocaleString('id-ID');
+    }
+
+    function calculatePrice() {
+      const basePrice = parseInt(materialSelect.value, 10);
+      let addonTotal = 0;
+      addonChecks.forEach(chk => {
+        if (chk.checked) addonTotal += parseInt(chk.value, 10);
+      });
+
+      const qty = Math.max(1, parseInt(qtyInput.value, 10) || 1);
+      const unitPrice = basePrice + addonTotal;
+      const subtotal = unitPrice * qty;
+
+      let discountPct = 0;
+      if (qty >= 100) {
+        discountPct = 0.20;
+        discountBadge.textContent = 'Bulk Order: Diskon 20% + Free Design Help!';
+      } else if (qty >= 50) {
+        discountPct = 0.15;
+        discountBadge.textContent = 'Bulk Order: Diskon 15% (Teams & Classes)';
+      } else if (qty >= 10) {
+        discountPct = 0.10;
+        discountBadge.textContent = 'Bulk Order: Diskon 10% (Small Events)';
+      } else {
+        discountBadge.textContent = 'Harga Satuan Normal (1–9 pcs)';
+      }
+
+      const discountAmount = Math.round(subtotal * discountPct);
+      const finalTotal = subtotal - discountAmount;
+
+      basePriceDisplay.textContent = formatRupiah(basePrice);
+      addonPriceDisplay.textContent = formatRupiah(addonTotal);
+      unitPriceDisplay.textContent = formatRupiah(unitPrice);
+      qtyDisplay.textContent = qty + ' pcs';
+
+      if (discountPct > 0) {
+        discountRow.style.display = 'flex';
+        discountAmountDisplay.textContent = '- ' + formatRupiah(discountAmount) + ` (${discountPct * 100}%)`;
+      } else {
+        discountRow.style.display = 'none';
+      }
+
+      totalPriceDisplay.textContent = formatRupiah(finalTotal);
+      return { basePrice, addonTotal, unitPrice, qty, discountPct, finalTotal };
+    }
+
+    materialSelect.addEventListener('change', calculatePrice);
+    addonChecks.forEach(chk => chk.addEventListener('change', calculatePrice));
+    qtyInput.addEventListener('input', calculatePrice);
+
+    waOrderBtn.addEventListener('click', () => {
+      const calc = calculatePrice();
+      const matName = materialSelect.options[materialSelect.selectedIndex].dataset.name;
+      const selectedAddons = Array.from(addonChecks)
+        .filter(c => c.checked)
+        .map(c => c.dataset.label);
+      const note = noteInput.value.trim() || '-';
+
+      const msg = `Halo Kecantol.id! Saya ingin memesan Custom Keychain:\n` +
+        `• Bahan: ${matName}\n` +
+        `• Add-ons: ${selectedAddons.length ? selectedAddons.join(', ') : 'Tanpa tambahan'}\n` +
+        `• Jumlah: ${calc.qty} pcs\n` +
+        `• Catatan Desain: ${note}\n` +
+        `• Estimasi Total: ${formatRupiah(calc.finalTotal)}\n\n` +
+        `Mohon info langkah selanjutnya ya!`;
+
+      window.open(`https://wa.me/6285886821222?text=${encodeURIComponent(msg)}`, '_blank');
+    });
+
+    calculatePrice();
+  </script>
+</body>
+</html>
